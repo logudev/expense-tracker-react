@@ -7,8 +7,8 @@ const TransactionList = () => {
 
   return (
     <>
-      <h3>History</h3>
-      <ul className="list">
+      <h3 id="txnHistoryLabel">History</h3>
+      <ul id="txnHistoryList" className="list">
         {transactions.map((trx) => (
           <Transaction transaction={trx} key={trx.id} />
         ))}

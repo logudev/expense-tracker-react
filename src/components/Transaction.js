@@ -6,10 +6,16 @@ const Transaction = ({ transaction }) => {
 
   const sign = transaction.amount > 0 ? "+" : "-";
   return (
-    <li className={transaction.amount > 0 ? "plus" : "minus"}>
+    <li
+      id={`txn-${transaction.id}-item`}
+      className={transaction.amount > 0 ? "plus" : "minus"}
+    >
       {transaction.text}{" "}
-      <span>{`${sign}$${Math.abs(transaction.amount)}`}</span>
+      <span id={`txn-${transaction.id}-amt`}>{`${sign}$${Math.abs(
+        transaction.amount
+      )}`}</span>
       <button
+        id={`txn-${transaction.id}-delete`}
         className="delete-btn"
         onClick={() => deleteTransaction(transaction.id)}
       >

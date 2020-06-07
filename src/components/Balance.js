@@ -8,8 +8,8 @@ const Balance = () => {
 
   return (
     <>
-      <h4>Your balance</h4>
-      <h1>${total}</h1>
+      <h4 id="totalBalanceLabel">Your balance</h4>
+      <h1 id="totalBalance">${total}</h1>
     </>
   );
 };

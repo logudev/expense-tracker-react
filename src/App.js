@@ -11,7 +11,7 @@ const App = () => {
   return (
     <GlobalProvider>
       <Header />
-      <div className="container">
+      <div id="appContainer" className="container">
         <Balance />
         <IncomeExpense />
         <TransactionList />

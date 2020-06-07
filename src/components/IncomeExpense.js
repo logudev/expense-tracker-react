@@ -13,13 +13,17 @@ const IncomeExpense = () => {
 
   return (
     <div className="inc-exp-container">
-      <div>
-        <h4>Income</h4>
-        <p className="money plus">${income}</p>
+      <div id="incomeWrapper">
+        <h4 id="incomeLabel">Income</h4>
+        <p id="incomeAmount" className="money plus">
+          ${income}
+        </p>
       </div>
-      <div>
-        <h4>Expense</h4>
-        <p className="money minus">${expense}</p>
+      <div id="expenseWrapper">
+        <h4 id="expenseLabel">Expense</h4>
+        <p id="expenseAmount" className="money minus">
+          ${expense}
+        </p>
       </div>
     </div>
   );
